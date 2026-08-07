@@ -41,6 +41,17 @@ if [ -f "$BRANDING/nodes/WAHA/waha.svg" ]; then
   cp "$BRANDING/nodes/WAHA/waha.svg" "$ROOT/nodes/WAHA/waha.svg"
 fi
 
+# base TypeScript files (display names shown in n8n UI)
+if [ -f "$BRANDING/nodes/WAHA/base/node.ts" ]; then
+  echo "    nodes/WAHA/base/node.ts"
+  cp "$BRANDING/nodes/WAHA/base/node.ts" "$ROOT/nodes/WAHA/base/node.ts"
+fi
+
+if [ -f "$BRANDING/nodes/WAHA/base/trigger.ts" ]; then
+  echo "    nodes/WAHA/base/trigger.ts"
+  cp "$BRANDING/nodes/WAHA/base/trigger.ts" "$ROOT/nodes/WAHA/base/trigger.ts"
+fi
+
 # images (optional — skip if not provided)
 for img in "WAHA+n8n.png" "waha-n8n-workflow-example.png"; do
   if [ -f "$BRANDING/$img" ]; then
