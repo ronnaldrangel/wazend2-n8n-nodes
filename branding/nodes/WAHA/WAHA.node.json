@@ -6,12 +6,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/ronnaldrangel/n8n-nodes-wazend"
+				"url": "https://github.com/ronnaldrangel/wazend2-n8n-nodes"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/ronnaldrangel/n8n-nodes-wazend"
+				"url": "https://github.com/ronnaldrangel/wazend2-n8n-nodes"
 			}
 		]
 	}
