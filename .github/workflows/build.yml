@@ -39,6 +39,11 @@ jobs:
           echo "==> Built:"
           ls -lh out/
 
+      - name: Publish to npm
+        run: |
+          npm set "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}"
+          npm publish out/*.tgz --access public
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
