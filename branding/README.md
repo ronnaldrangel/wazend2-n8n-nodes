@@ -1,4 +1,4 @@
-# wazend2-n8n-nodes
+# n8n-nodes-wazend2
 
 This is an n8n community node. It lets you use Wazend WhatsApp API in your n8n workflows.
 
@@ -10,7 +10,7 @@ This is an n8n community node. It lets you use Wazend WhatsApp API in your n8n w
 Go to your **n8n** => **Settings** => **Community nodes** and install:
 
 ```
-wazend2-n8n-nodes
+n8n-nodes-wazend2
 ```
 
 If you need help with that, check the [**Install community nodes**](https://docs.n8n.io/integrations/community-nodes/installation/gui-install/)
