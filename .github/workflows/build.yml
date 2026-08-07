@@ -1,0 +1,47 @@
+name: Build Wazend n8n Node
+
+on:
+  workflow_run:
+    workflows: ["Sync from Upstream"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply Wazend branding
+        shell: bash
+        run: bash scripts/apply-branding.sh
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Package
+        run: |
+          npm pack
+          mkdir -p out
+          mv *.tgz out/
+          echo "==> Built:"
+          ls -lh out/
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: wazend-n8n-node
+          path: out/*.tgz
+          retention-days: 30
