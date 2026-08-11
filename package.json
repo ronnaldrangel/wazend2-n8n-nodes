@@ -1,19 +1,19 @@
 {
-  "name": "@devlikeapro/n8n-nodes-waha",
-  "version": "2025.2.9",
-  "description": "n8n to connect with WAHA (Whatsapp HTTP API)",
+  "name": "n8n-nodes-wazend2",
+  "version": "2025.2.11",
+  "description": "n8n nodes for Wazend (WhatsApp HTTP API)",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "https://n8n.io",
   "author": {
-    "name": "WAHA",
-    "email": "waha@devlike.pro"
+    "name": "Wazend",
+    "email": "ronnaldrangel@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devlikeapro/n8n-nodes-waha.git"
+    "url": "https://github.com/ronnaldrangel/wazend2-n8n-nodes.git"
   },
   "moduleDirectories": [
     "node_modules",
