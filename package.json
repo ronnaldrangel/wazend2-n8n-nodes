@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-wazend2",
-  "version": "2025.2.16",
+  "version": "2025.2.17",
   "description": "n8n nodes for Wazend (WhatsApp HTTP API)",
   "keywords": [
     "n8n-community-node-package"
